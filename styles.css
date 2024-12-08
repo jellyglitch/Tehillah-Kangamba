@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    margin: 50px 80px;
+    width: 40vw;
+    min-width: 400px;
+    max-width: 700px;
+    padding: 20px;
+
+    background-color: #D7DDFD;
+    border: 4px solid #9FB1FA;
+
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #393A50;
+    transition: all 0.2s ease-in-out;
+}
+
+ .navbar ul li a:hover {
+    font-size: 1.3rem;
+}
+
+.container-home {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-introduction {
+   display: inline-block;
+}
+
+.speech-bubble {
+    display: inline-block;
+    position: relative; /* Allows the tail to be positioned relative to the hexagon */
+    background: #ce5c5c; /* Hexagon color */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px; /* Text size */
+    width: 50vw; /* Bubble width */
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    text-align: center; /* Center-align text */
+    clip-path: polygon(
+        50% 5%,   /* Top center */
+        100% 22%, /* Top-right corner */
+        95% 77%, /* Bottom-right corner */
+        30% 89%, /* Bottom center */
+        25% 85%,
+        0% 80%,
+        15% 72%,
+        0% 55%,   /* Bottom-left corner */
+        10% 15%    /* Top-left corner */
+    );
+}
