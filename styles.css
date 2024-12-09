@@ -11,6 +11,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     margin: 50px 80px;
     width: 40vw;
     min-width: 400px;
@@ -18,9 +19,30 @@ body {
     padding: 20px;
 
     background-color: #D7DDFD;
-    border: 4px solid #9FB1FA;
 
+}
 
+.navbar:after,
+.navbar:before {
+    content: '';
+    background: #8587AB;
+    position: absolute;
+}
+
+.navbar:after {
+    width: 100%;
+    height: 20px;
+    left: -10px;
+    bottom: 0;
+    transform: translatey(100%) skewx(-45deg);
+}
+
+.navbar:before {
+    width: 20px;
+    height: 100%;
+    left: 0;
+    transform: translatex(-100%) skewy(-45deg);
+    top: 10px;
 }
 
 .navbar ul {
