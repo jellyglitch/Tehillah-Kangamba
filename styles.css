@@ -9,7 +9,6 @@ body {
     height: 100vh;
     overflow: hidden;
 
-
     background: repeating-conic-gradient(
         #FEDAEA 0deg 90deg,
         #FACEE2 90deg 180deg
@@ -83,7 +82,7 @@ body {
 
 .speech-bubble {
     display: inline-block;
-    position: relative; /* Allows the tail to be positioned relative to the hexagon */
+    position: relative; 
     background: #fff2f2; /* Hexagon color */
     color: #333; /* Text color */
     font-family: Arial, sans-serif; /* Font style */
@@ -103,4 +102,13 @@ body {
         5% 55%,   /* Bottom-left corner */
         17% 19%    /* Top-left corner */
     );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.speech {
+    display: inline-block;
+    position: relative;
 }
