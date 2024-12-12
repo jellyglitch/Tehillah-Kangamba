@@ -7,7 +7,6 @@
 body {
     font-size: Arial, sans-serif;
     height: 100vh;
-    overflow: hidden;
 
     background: repeating-conic-gradient(
         #FEDAEA 0deg 90deg,
