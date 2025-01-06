@@ -36,6 +36,10 @@ body {
       
 }
 
+section {
+    min-height: 100vh;
+}
+
 h1 {
     font-family: 'welcome_mandalaregular', sans-serif;
     font-size: 100px;
