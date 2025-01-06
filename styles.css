@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'welcome_mandalaregular';
+    src: url('fonts/welcome_mandala-webfont.woff2') format('woff2'),
+         url('fonts/welcome_mandala-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cerayonregular';
+    src: url('fonts/cerayon-webfont.woff2') format('woff2'),
+         url('fonts/cerayon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,15 +23,46 @@
 }
 
 body {
-    font-size: Arial, sans-serif;
-    height: 100vh;
+    font-family: 'cerayonregular', sans-serif;
+    font-size:16px;
+    line-height: 1.5;
 
+    height: 100vh;
     background: repeating-conic-gradient(
         #FEDAEA 0deg 90deg,
         #FACEE2 90deg 180deg
       );
     background-size: 300px 300px; /* Adjust square size */
       
+}
+
+h1 {
+    font-family: 'welcome_mandalaregular', sans-serif;
+    font-size: 100px;
+    margin: 0;
+}
+
+.tehillah {
+    position: relative;
+}
+
+.tehillah:before {
+    position: absolute;
+    font-family: 'cerayonregular', sans-serif;
+    font-size: 36px;
+    content: "Hi, I'm"
+}
+
+.tehillah:after {
+    position: absolute;
+    font-family: 'welcome_mandalaregular', sans-serif;
+    content: 'KANGAMBA';
+    top: 55px;
+}
+
+.job-titles {
+    font-size: 24px;
+    padding-top: 15px;
 }
 
 .navbar {
