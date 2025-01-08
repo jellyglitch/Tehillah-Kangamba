@@ -164,3 +164,39 @@ h1 {
     display: inline-block;
     position: relative;
 }
+
+#projects-heading {
+    position: absolute;
+    margin: 0 40px;
+}
+
+.projects-parent-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    height: 700px;
+    padding-top: 100px;
+}
+
+.main-projects {
+    background-color: #393A50;
+    width: 400px;
+
+}
+
+.other-projects {
+    background-color: #393A50;
+    width: 400px;
+
+}
+
+.project1 {
+    height: 50%;
+    background-color:rgb(173, 196, 188);
+}
+
+.project2 {
+    height: 50%;
+    background-color: #8993a9;
+}
