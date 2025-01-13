@@ -165,7 +165,7 @@ h1 {
     position: relative;
 }
 
-#projects-heading {
+.project-heading {
     position: absolute;
     margin: 0 40px;
 }
@@ -226,6 +226,7 @@ h1 {
 .about {
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
     padding: 0 100px;
 }
 
@@ -238,3 +239,52 @@ h1 {
     display: flex;
     gap: 20px;
 }
+
+@media screen and (max-width: 910px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 0 50px;
+    }
+
+    .about-content-position {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+
+    .font-resize {
+        font-size: 48px;
+    }
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 0 100px;
+    background-color: antiquewhite;
+    border: black dashed 2px;
+    margin: auto 0;
+    width: 90vw;
+    height: 50vh;
+}
+
+.form-content {
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+
