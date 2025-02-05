@@ -32,12 +32,12 @@ body {
         #FEDAEA 0deg 90deg,
         #FACEE2 90deg 180deg
       );
-    background-size: 300px 300px; /* Adjust square size */
-      
+    background-size: 300px 300px; /* Size of background squares */
 }
 
 section {
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 h1 {
@@ -46,62 +46,15 @@ h1 {
     margin: 0;
 }
 
-.tehillah {
-    position: relative;
-}
-
-.tehillah:before {
-    position: absolute;
-    font-family: 'cerayonregular', sans-serif;
-    font-size: 36px;
-    content: "Hi, I'm"
-}
-
-.tehillah:after {
-    position: absolute;
-    font-family: 'welcome_mandalaregular', sans-serif;
-    content: 'KANGAMBA';
-    top: 55px;
-}
-
-.job-titles {
-    font-size: 24px;
-    padding-top: 15px;
-}
-
 .navbar {
     position: relative;
-    margin: 50px 80px;
+    margin: 20px auto 30px;
     width: 40vw;
     min-width: 400px;
     max-width: 700px;
     padding: 20px;
 
     background-color: #D7DDFD;
-
-}
-
-.navbar:after,
-.navbar:before {
-    content: '';
-    background: #8587AB;
-    position: absolute;
-}
-
-.navbar:after {
-    width: 100%;
-    height: 20px;
-    left: -10px;
-    bottom: 0;
-    transform: translatey(100%) skewx(-45deg);
-}
-
-.navbar:before {
-    width: 20px;
-    height: 100%;
-    left: 0;
-    transform: translatex(-100%) skewy(-45deg);
-    top: 10px;
 }
 
 .navbar ul {
@@ -121,56 +74,175 @@ h1 {
     font-size: 1.3rem;
 }
 
-.container-home {
+.navbar:after {
+    width: 100%;
+    height: 10px;
+    left: -5px;
+    bottom: 0;
+    transform: translatey(100%) skewx(-45deg);
+}
+
+.navbar:before {
+    width: 10px;
+    height: 100%;
+    left: 0;
+    transform: translatex(-100%) skewy(-45deg);
+    top: 5px;
+}
+
+.navbar:after,
+.navbar:before { /*Nav shadow*/
+    content: '';
+    background: #8587AB;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 560px) {
+    .navbar {
+        position: relative;
+        margin: 50px 80px;
+        width: 40vw;
+        min-width: 400px;
+        max-width: 700px;
+        padding: 20px;
+    
+        background-color: #D7DDFD;
+    }
+    
+    .navbar:after,
+    .navbar:before { /*Nav shadow*/
+        content: '';
+        background: #8587AB;
+        position: absolute;
+    }
+    
+    .navbar:after {
+        width: 100%;
+        height: 20px;
+        left: -10px;
+        bottom: 0;
+        transform: translatey(100%) skewx(-45deg);
+    }
+    
+    .navbar:before {
+        width: 20px;
+        height: 100%;
+        left: 0;
+        transform: translatex(-100%) skewy(-45deg);
+        top: 10px;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #393A50;
+        transition: all 0.2s ease-in-out;
+    }
+    
+     .navbar ul li a:hover {
+        font-size: 1.3rem;
+    }
+}
+
+/*** HOME PAGE ***/
+#container-home {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.title-introduction {
+#title-introduction {
    display: inline-block;
 }
 
-.speech-bubble {
-    display: inline-block;
-    position: relative; 
-    background: #fff2f2; /* Hexagon color */
-    color: #333; /* Text color */
-    font-family: Arial, sans-serif; /* Font style */
-    font-size: 16px; /* Text size */
-    width: 50vw; /* Bubble width */
-    max-width: 500px;
-    aspect-ratio: 1 / 1;
-    text-align: center; /* Center-align text */
-    clip-path: polygon(
-        55% 5%,   /* Top center */
-        100% 28%, /* Top-right corner */
-        90% 77%, /* Bottom-right corner */
-        30% 90%, /* Bottom center */
-        20% 78%,
-        0% 71%,
-        13% 67%,
-        5% 55%,   /* Bottom-left corner */
-        17% 19%    /* Top-left corner */
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.speech {
-    display: inline-block;
+#tehillah {
     position: relative;
+    font-size: 1.5rem;
 }
 
-.project-heading {
+#job-titles {
+    font-size: 24px;
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 576px) {
+    #title-introduction {
+        display: inline-block;
+     }
+     
+     #tehillah {
+        position: relative;
+        font-size: 100px;
+     }
+     
+     #tehillah:before {
+        position: absolute;
+        font-family: 'cerayonregular', sans-serif;
+        font-size: 36px;
+        content: "Hi, I'm"
+     }
+     
+     #tehillah:after {
+        position: absolute;
+        font-family: 'welcome_mandalaregular', sans-serif;
+        content: 'KANGAMBA';
+        top: 55px;
+     }
+     
+     #job-titles {
+        font-size: 24px;
+        padding-top: 15px;
+     }
+
+    #speech-bubble {
+        display: inline-block;
+        position: relative; 
+        background: #fff2f2; /* Hexagon color */
+        color: #333; /* Text color */
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        width: 50vw; /* Bubble width */
+        max-width: 500px;
+        aspect-ratio: 1 / 1;
+        text-align: center; 
+        clip-path: polygon(
+            55% 5%,   
+            100% 28%, 
+            90% 77%, 
+            30% 90%, 
+            20% 78%,
+            0% 71%,
+            13% 67%,
+            5% 55%,   
+            17% 19%    
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #speech { 
+        display: inline-block;
+        position: relative;
+    }
+}
+
+/*** PROJECT PAGE ***/
+#project-heading {
     position: absolute;
     margin: 0 40px;
 }
 
-.projects-parent-div {
+#projects-parent-div {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -179,24 +251,24 @@ h1 {
     padding-top: 100px;
 }
 
-.main-projects {
+#main-projects {
     background-color: #393A50;
     width: 400px;
 
 }
 
-.other-projects {
+#other-projects {
     background-color: #393A50;
     width: 400px;
 
 }
 
-.project1 {
+#project1 {
     height: 50%;
     background-color:rgb(173, 196, 188);
 }
 
-.project2 {
+#project2 {
     height: 50%;
     background-color: #8993a9;
 }
@@ -207,58 +279,60 @@ h1 {
     font-size: 24px;
 }
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.meet-the {
+/*** ABOUT PAGE ***/
+#meet-the {
     position: relative;
 }
 
-.meet-the:after {
+#meet-the:after {
     position: absolute;
     content: 'CHARACTER';
     top: 55px;
 }
 
-.about {
+#about {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     padding: 0 100px;
 }
 
-.about-content {
+#about-content {
     margin: 50px;
     width: 600px;
 }
 
-.about-content-position {
+#about-content-position {
     display: flex;
     gap: 20px;
 }
 
 @media screen and (max-width: 910px) {
-    .about {
+    #about {
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
         padding: 0 50px;
     }
 
-    .about-content-position {
+    #about-content-position {
         display: flex;
         flex-flow: column nowrap;
         gap: 20px;
     }
 
-    .font-resize {
+    #about-font-resize {
         font-size: 48px;
     }
 }
 
+/*** CONTACT PAGE ***/
 #contact {
     display: flex;
     align-items: center;
