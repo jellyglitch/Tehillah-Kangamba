@@ -38,6 +38,10 @@ body {
     background-size: 300px 300px; /* Size of background squares */
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 section {
     min-height: 100vh;
     max-width: 100vw;
