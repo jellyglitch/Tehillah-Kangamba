@@ -43,7 +43,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    height: 45vw;
     max-width: 100vw;
     padding-top: 50px;
 }
@@ -54,7 +54,7 @@ section {
 
 h1 {
     font-family: 'welcome_mandalaregular', sans-serif;
-    font-size: 3rem;
+    font-size: 10vw;
     margin: 0;
 }
 
@@ -188,61 +188,37 @@ h1 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 15px;
 }
 
-#title-introduction {
-   display: inline-block;
+@media (max-width: 767px) { 
+    
 }
 
-#tehillah {
-    position: relative;
-    font-size: 1.5rem;
-}
-
-#job-titles {
-    font-size: 24px;
-    padding-top: 15px;
-}
-
-@media screen and (min-width: 560px) {
-    #title-introduction {
-        display: inline-block;
-     }
-     
-     #tehillah {
+@media (min-width: 768px) { /* Tablet Size and Up */
+    #name {
         position: relative;
-        font-size: 15rem;
-     }
-     
-     #tehillah:before {
+    }
+
+    #kangamba {
         position: absolute;
-        font-family: 'cerayonregular', sans-serif;
-        font-size: 36px;
-        content: "Hi, I'm"
-     }
+        top: 8vw;
+    }
+
+    #container-home h1 {
+        font-size: 15vw;
+    }
      
-     #tehillah:after {
-        position: absolute;
-        font-family: 'welcome_mandalaregular', sans-serif;
-        content: 'KANGAMBA';
-        top: 55px;
-     }
-     
-     #job-titles {
+    #job-titles {
         font-size: 24px;
         padding-top: 15px;
-     }
+    }
 
     #speech-bubble {
-        display: inline-block;
-        position: relative; 
         background: #fff2f2; /* Hexagon color */
         color: #333; /* Text color */
         font-family: Arial, sans-serif; 
         font-size: 16px; 
-        width: 50vw; /* Bubble width */
+        width: 40vw; /* Bubble width */
         max-width: 500px;
         aspect-ratio: 1 / 1;
         text-align: center; 
