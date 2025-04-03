@@ -61,7 +61,7 @@ h1 {
 @media (max-width: 767px) {
     .navbar {
         position: relative;
-        margin: clamp(5px, 10vw, 50px) clamp(30px, 10vw, 80px);
+        margin: clamp(5px, 10vw, 50px) clamp(30px, 10vw, 80px) 0;
     }
 
     .menu-toggle {
@@ -106,6 +106,7 @@ h1 {
     .navbar ul {
         list-style: none;
         box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+        z-index: 100;
     }
 
     .nav-links {
@@ -184,18 +185,56 @@ h1 {
 }
 
 /*** HOME PAGE ***/
-#container-home {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
 
 @media (max-width: 767px) { 
+    #container-home {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    #title-introduction {
+        padding: 0 20px;
+    }
+
+    #name-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 15px;
+
+        position: relative;
+    }
+
+    @media (max-width: 519px) {
+        #kangamba {
+            position: absolute;
+            top: 10vw;
+        }
+    }
     
+    #container-home h1 {
+        font-size: 6rem;
+    }
+
+    #job-titles {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    #speech-bubble {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) { /* Tablet Size and Up */
-    #name {
+    #container-home {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    #name-container {
         position: relative;
     }
 
@@ -209,7 +248,7 @@ h1 {
     }
      
     #job-titles {
-        font-size: 24px;
+        font-size: 3vw;
         padding-top: 15px;
     }
 
