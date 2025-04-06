@@ -209,7 +209,7 @@ h1 {
     @media (max-width: 519px) {
         #kangamba {
             position: absolute;
-            top: 10vw;
+            top: 12.5vw;
         }
     }
     
@@ -220,6 +220,7 @@ h1 {
     #job-titles {
         font-size: 5vw;
         text-align: center;
+        padding-top: 15px;
     }
 
     #speech-bubble {
@@ -327,9 +328,10 @@ h1 {
 }
 
 @media (max-width: 500px) { /* Accordian project menu for phone screens */
-    #other-projects {
-        
+    #main-projects, #other-projects {
+        width: 300px;
     }
+
 }
 
 .center {
