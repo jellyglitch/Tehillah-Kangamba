@@ -18,6 +18,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -383,6 +384,7 @@ h1 {
 @media (max-width: 900px) {
     #about .heading {
         text-align: center;
+        font-size: clamp(84px, 16vw, 108px);
     }
 
     #about-container {
