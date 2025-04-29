@@ -198,11 +198,11 @@ h1 {
         align-items: center;
     }
 
-    #title-introduction {
+    .title-introduction {
         padding: 0 20px;
     }
 
-    #home #name-container {
+    #home .name-container {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -212,7 +212,7 @@ h1 {
     }
 
     @media (max-width: 519px) {
-        #kangamba {
+        .kangamba {
             position: absolute;
             top: 12.5vw;
         }
@@ -222,13 +222,13 @@ h1 {
         font-size: 6rem;
     }
 
-    #job-titles {
+    .job-titles {
         font-size: 5vw;
         text-align: center;
         padding-top: 15px;
     }
 
-    #speech-bubble {
+    .speech-bubble {
         display: none;
     }
 }
@@ -240,11 +240,11 @@ h1 {
         justify-content: space-around;
     }
 
-    #home #name-container {
+    #home .name-container {
         position: relative;
     }
 
-    #kangamba {
+    .kangamba {
         position: absolute;
         top: 8vw;
     }
@@ -253,12 +253,12 @@ h1 {
         font-size: 15vw;
     }
      
-    #job-titles {
+    .job-titles {
         font-size: 3vw;
         padding-top: 15px;
     }
 
-    #speech-bubble {
+    .speech-bubble {
         background: #fff2f2; /* Hexagon color */
         color: #333; /* Text color */
         font-family: Arial, sans-serif; 
@@ -284,7 +284,7 @@ h1 {
         text-align: center;
     }
     
-    #speech { 
+    .speech { 
         display: inline-block;
         position: relative;
     }
@@ -296,43 +296,60 @@ h1 {
     font-size: clamp(84px, 16vw, 108px);
 }
 
-#projects-parent-div {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 100px;
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: fit-content;
 }
 
-#main-projects {
+.slides {
+    display: flex;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding-top: 100px;
+    min-width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.project-left {
     background-color: #393A50;
     width: 400px;
 }
 
-#other-projects {
+.project-right {
     background-color: #393A50;
     width: 400px;
     height: 600px;
 }
 
-#project1 {
+.project1 {
     height: 300px;
     background-color:rgb(173, 196, 188);
 }
 
-#project2 {
+.project2 {
     height: 300px;
     background-color: #8993a9;
 }
 
-#more-projects {
+.more-projects {
     margin: 10px;
     padding: 10px 50px;
     font-size: 24px;
 }
 
 @media (max-width: 500px) { 
-    #main-projects, #other-projects {
+    .main-projects, .other-projects {
         width: 300px;
     }
 }
@@ -352,31 +369,31 @@ h1 {
     width: 100%;
 }
 
-#character-image {
+.character-image {
     width: 100%;
     height: auto;
     grid-row: span 2;
 }
 
-#character-image img {
+.character-image img {
     width: 100%;
     height: auto;
 }
 
-#about-content {
+.about-content {
     grid-row: 2;
     grid-column: 2;
     font-size: 1.5vw;
     padding-top: 5vw;
 }
 
-#about #name-container {
+#about .name-container {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-#about #kangamba {
+#about .kangamba {
     position: absolute;
     top: 6vw;
 }
@@ -395,17 +412,17 @@ h1 {
         gap: 0;
     }
 
-    #character-image {
+    .character-image {
         width: 150px;
         height: auto;
     }
 
-    #about #kangamba {
+    #about .kangamba {
         position: static;
         padding-left: 15px;
     }
 
-    #about-content {
+    .about-content {
         grid-row: 2;
         grid-column: 2;
         font-size: 1rem;
