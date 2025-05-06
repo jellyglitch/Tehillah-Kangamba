@@ -12,3 +12,4 @@ document.addEventListener('click', e => {
       navLinks.classList.remove("show-menu");
   }
 })
+
