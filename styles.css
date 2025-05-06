@@ -304,14 +304,13 @@ h1 {
 
 .slide {
     display: flex;
+    opacity: 0;
+    position: absolute;
 }
 
 .active {
-    display: block;
-}
-
-.inactive {
-    display: none;
+    opacity: 1;
+    position: relative;
 }
 
 .project-left {
