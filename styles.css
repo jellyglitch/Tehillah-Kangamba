@@ -359,6 +359,12 @@ h1 {
     align-items: center;
 }
 
+button#prev, button#next {
+    all: unset;
+    cursor: pointer;
+    width: 80px;
+}
+
 /******************** ABOUT PAGE ********************/
 #about-container {
     display: grid;
