@@ -258,6 +258,33 @@ h1 {
         padding-top: 15px;
     }
 
+    .bubble-wrapper {
+        position: relative;
+    }
+
+    .star{
+        fill: gold;
+        stroke: black;
+        stroke-width: 0.4;
+    }
+
+    .star1 {
+        position: absolute;
+        width: 7vw;
+        left: 19%;
+        top: 17%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .star2 {
+        position: absolute;
+        width: 5vw;
+        left: 95%;
+        top: 85%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
     .speech-bubble {
         background: #fff2f2; /* Hexagon color */
         color: #333; /* Text color */
@@ -269,11 +296,41 @@ h1 {
         text-align: center; 
         clip-path: polygon(
             55% 5%,   
-            100% 28%, 
+            97% 28%, 
             90% 77%, 
             30% 90%, 
             20% 78%,
             0% 71%,
+            13% 67%,
+            5% 55%,   
+            17% 19%    
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .speech-bubble-outline {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        background: #333; /* Hexagon color */
+        color: #333; /* Text color */
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        width: 40vw; /* Bubble width */
+        max-width: 500px;
+        aspect-ratio: 1 / 1;
+        text-align: center; 
+        clip-path: polygon(
+            57% 2%,   
+            100% 25%, 
+            91% 79%, 
+            30% 90%, 
+            22% 80%,
+            0% 72%,
             13% 67%,
             5% 55%,   
             17% 19%    
