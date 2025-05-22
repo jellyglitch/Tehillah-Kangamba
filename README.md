@@ -34,10 +34,6 @@ An interactive, comic book–inspired portfolio website designed for Tehillah Ka
 
 ---
 
-## Getting Started
-
-To run locally:
-
 ## License
 This project is client-owned. Code shared for educational and portfolio purposes only.
 

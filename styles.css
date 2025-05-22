@@ -381,6 +381,11 @@ h1 {
     width: 400px;
     height: 600px;
     padding: 20px;
+    color: #fff2f2;
+}
+
+.live-links {
+    color: #FACEE2;
 }
 
 .project-heading {
@@ -527,6 +532,10 @@ button#prev, button#next {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+}
+
+textarea{
+    resize: none;
 }
 
 @media (min-width: 930px) {

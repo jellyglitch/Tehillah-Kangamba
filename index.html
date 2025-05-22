@@ -86,35 +86,74 @@
                         potential to expand beyond web applications in the future.
                     </p><br>
 
-                    <a href="https://github.com/JakobMckenna/NoName/tree/main">[Github]</a>
+                    <a href="https://github.com/JakobMckenna/NoName/tree/main" class="live-links">[Github]</a>
                 </div>
             </div>
         
             <div class="slide">
                 <div class="project-left">
                     <div class="project1">
-                        SLIDE 2
+                        
                     </div>
                     <div class="project2">
 
                     </div>
                 </div>
                 <div class="project-right">
+                    <p class="project-heading">AI-Powered Accessibility Checker</p>
+                    <p>Tech Stack: ???</p><br>
+                    <p>Our AI-powered Accessibility Checker is aimed at streamlining the process of 
+                        ensuring digital content is accessible to all users. Leveraging advanced machine 
+                        learning algorithms, our platform efficiently scans websites to detect potential 
+                        accessibility issues. Our Accessibility Checker offers thorough analysis and 
+                        practical recommendations for improvement. By providing developers, designers, 
+                        and content creators with valuable insights, our solution contributes to creating 
+                        a more inclusive digital environment where everyone can access and engage with 
+                        content effortlessly.</p><br>
 
+                    <a href="https://github.com/AMarinic92/4560-IA-Accessibility-Checker" class="live-links">[Github]</a>
                 </div>
             </div>
         
             <div class="slide">
                 <div class="project-left">
                     <div class="project1">
-                        SLIDE 3
+                        
                     </div>
                     <div class="project2">
 
                     </div>
                 </div>
                 <div class="project-right">
+                    <p class="project-heading">IMDB Database Analyzer</p>
+                    <p>Tech Stack: Next JS, Typescript</p><br>
+                    
 
+                    <a href="https://github.com/TehillahK/IMDB-Database-Analyzer" class="live-links">[Github]</a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="project-left">
+                    <div class="project1">
+                        
+                    </div>
+                    <div class="project2">
+
+                    </div>
+                </div>
+                <div class="project-right">
+                    <p class="project-heading">Flash Chat iOS13</p>
+                    <p>Tech Stack: Swift</p><br>
+                    <p>
+                        One of the most fundamental component of modern iOS apps is the Table View. 
+                        Table Views are used everywhere from the Mail app to the Messages app. It’s a 
+                        crucial part of every iOS developer’s tool belt. In this tutorial we’ll be 
+                        getting to grips with Table Views, creating custom cells, and making our own 
+                        cloud-based backend database. It’s going to be epic, so buckle up.
+                    </p><br>
+
+                    <a href="https://github.com/TehillahK/Flash-Chat-iOS13" class="live-links">[Github]</a>
                 </div>
             </div>
                 
@@ -159,7 +198,9 @@
                 <h1>Reach Out!</h1>
             </div>
             
-            <form action="example.com/path" method="post" class="form">
+            <form action="https://api.web3forms.com/submit" method="post" class="form" id="contact-form">
+
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
                 <label for="full_name">Full Name:</label>
                 <input type="text" id="full_name" name="full_name" placeholder="Your full name" required>
@@ -169,12 +210,32 @@
 
 
                 <textarea name="message" placeholder="You message..." required></textarea>
+
+                <div class="h-captcha" data-captcha="true"></div>
+
+                
                 <button type="submit">Submit</button>
             </form>
            
         </div>
     </section>
 
-<script src="scripts.js"></script>
+
+    <script>
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(e) {
+
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+        if (!hCaptcha) {
+            e.preventDefault();
+            alert("Please fill out captcha field")
+            return
+        }
+    });
+    </script>
+    <script src="scripts.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>

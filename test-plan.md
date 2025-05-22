@@ -7,13 +7,11 @@
 | Webpage loads                | Loads without errors, fonts and assets display properly      | ✅     |
 | Comic-style panels           | Responsive layout and smooth transition between projects     | ⬜     |
 | Navigation (Desktop)         | Smooth scroll or jump to correct sections                    | ✅     |
-| Navigation (Mobile)          | Smooth scroll or jump to correct sections                    | ⬜     |
+| Navigation (Mobile)          | Smooth scroll or jump to correct sections                    | 🟡     |
 | Responsiveness (mobile/tablet) | Layout adapts for smaller screens without breaking         | 🟡     |
 | Interactive elements         | Any links, forms, or scroll-based triggers behave as expected| ⬜     |
-| Contact Form                 | Fields accept input without issue                            | ⬜     |
-| Email format check           | Error or highlight appears for invalid format                | ⬜     |
 | Validation                   | Form shows required field warnings                           | ⬜     |
-| Submission behavior          | Shows success message or clears fields                       | ⬜     |
+| Submission behavior          | Shows success message or clears fields                       | ✅     |
 | Footer or end section        | Loads properly, doesn't float over other content             | ⬜     |
 
 Legend: ✅ Pass | 🟡 Needs improvement | ⬜ Not started | ❌ Broken
