@@ -288,8 +288,6 @@ h1 {
     .speech-bubble {
         background: #fff2f2; /* Hexagon color */
         color: #333; /* Text color */
-        font-family: Arial, sans-serif; 
-        font-size: 16px; 
         width: 40vw; /* Bubble width */
         max-width: 500px;
         aspect-ratio: 1 / 1;
@@ -308,7 +306,6 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
 
     .speech-bubble-outline {
@@ -318,8 +315,6 @@ h1 {
 
         background: black; /* Hexagon color */
         color: #333; /* Text color */
-        font-family: Arial, sans-serif; 
-        font-size: 16px; 
         width: 40vw; /* Bubble width */
         max-width: 500px;
         aspect-ratio: 1 / 1;
@@ -338,13 +333,13 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
     
     .speech { 
         display: inline-block;
         position: relative;
         font-size: min(1.7vw, 24px);
+        font-family: 'cerayonregular', sans-serif;
     }
 }
 
@@ -428,10 +423,50 @@ h1 {
     align-items: center;
 }
 
-button#prev, button#next {
-    all: unset;
-    cursor: pointer;
+.arrow-divide{
+    gap: 50%;
+}
+
+.arrow-left {
+    background: #D7DDFD;
     width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    clip-path: polygon(
+        50% 0%, 
+        100% 50%, 
+        50% 100%, 
+        50% 70%, 
+        0% 70%, 
+        0% 30%, 
+        50% 30%
+    );
+    cursor: pointer;
+}
+
+.shadow-left {
+    filter: drop-shadow(1px 10px 0px #8587AB);
+}
+
+.arrow-right {
+    background: #D7DDFD;
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    clip-path: polygon(
+        50% 0%, 
+        0% 50%, 
+        50% 100%, 
+        50% 70%, 
+        100% 70%, 
+        100% 30%, 
+        50% 30%
+    );
+    cursor: pointer;
+}
+
+.shadow-right {
+    filter: drop-shadow(-1px 10px 0px #8587AB);
 }
 
 /******************** ABOUT PAGE ********************/
