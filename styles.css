@@ -55,11 +55,10 @@ section {
 h1 {
     font-family: 'welcome_mandalaregular', sans-serif;
     font-size: 10vw;
-    margin: 0;
 }
 
 .heading {
-    margin: 0 40px;
+    text-align: center;
 }
 
 /******************** NAVBAR ********************/
@@ -345,14 +344,12 @@ h1 {
 
 /******************** PROJECT PAGE ********************/
 #projects .heading {
-    position: absolute;
     font-size: clamp(84px, 16vw, 108px);
 }
 
 .slider {
     display: flex;
     justify-content: center;
-    margin-top: 130px;
 }
 
 .slide {
@@ -381,10 +378,6 @@ h1 {
 
 .live-links {
     color: #FACEE2;
-}
-
-.project-heading {
-    font-size: 2rem;
 }
 
 .project1 {
@@ -471,40 +464,33 @@ h1 {
 
 /******************** ABOUT PAGE ********************/
 #about-container {
-    display: grid;
-    grid-template: 1fr 2fr / 3fr 4fr;
     padding: 0 5vw;
     gap: 15px;
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#about .heading {
+    font-size: clamp(84px, 16vw, 108px);
 }
 
 .character-image {
-    width: 100%;
+    text-align: center;
     height: auto;
-    grid-row: span 2;
+    border-radius: 60%;
 }
 
 .character-image img {
-    width: 100%;
+    width: 30vw;
     height: auto;
+    border-radius: 40%;
 }
 
 .about-content {
-    grid-row: 2;
-    grid-column: 2;
-    font-size: 1.5vw;
-    padding-top: 5vw;
-}
-
-#about .name-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-#about .kangamba {
-    position: absolute;
-    top: 6vw;
+    font-size: 2vw;
+    padding: 0 10vw;
 }
 
 @media (max-width: 900px) {
@@ -519,16 +505,6 @@ h1 {
         align-items: center;
         width: 100%;
         gap: 0;
-    }
-
-    .character-image {
-        width: 150px;
-        height: auto;
-    }
-
-    #about .kangamba {
-        position: static;
-        padding-left: 15px;
     }
 
     .about-content {
