@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tehillah Kangamba's portfolio website. Enjoy the unique design while you go through his many projects.">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     
@@ -36,9 +37,8 @@
             <div class="bubble-wrapper">
                 <div class="speech-bubble">
                     <div class="speech">
-                        Tehillah is a full stack developer <br>
-                        and the cofounder of <br>
-                        BlackValley Comics. 
+                        I build mobile apps, web apps, <br>
+                        and I am an art enthusiast.
                     </div>
                 </div>
                 <div class="speech-bubble-outline"></div>
@@ -175,16 +175,20 @@
         <h1 class="heading">MEET THE CHARACTER</h1>
         <div id="about-container">
             <div class="character-image">
-                <img src="./images/about-icon.png">
+                <img src="./images/about-icon.png" loading="lazy" alt="Developer's portrait">
             </div>
             <div class="about-content">
                 <p>
-                    I'm a software developer based in Winnipeg, Manitoba. My main focus has been developing
-                    Black Valley Comics; a website that hosts comics by African comic creators. Along with my peers,
-                    our mission is to create a platform that would amplify African voices in the global comic industry.
-                    <br>
-                    I'm also passionate about music. I've created websites and platforms for independent artists to
-                    host their work.
+                    I've been making apps since high school (2014!), starting with simple VB 6.0 projects 
+                    that actually won me some science fairs. My journey through A-Level and college computer 
+                    science sharpened my development skills. I've built a bunch of web and mobile apps with 
+                    tools like Swift, JavaScript, React, React Native, Express.js, and I've also got experience 
+                    with ASP.NET and Python for backends.
+                    <br><br>
+                    My real interest lies in how systems are put together, getting data where it needs to go 
+                    efficiently, and making sure everything runs fast on the client side. Basically, I just 
+                    love building and perfecting things. If you're curious, feel free to see what I'm working
+                    on next – no pressure to talk, just keep an eye out!
                 </p>
             </div>
         </div>
@@ -236,6 +240,8 @@
             alert("Please fill out captcha field")
             return
         }
+
+        document.getElementById("contact-form").reset();
     });
     </script>
     <script src="scripts.js"></script>
