@@ -201,7 +201,7 @@
                 <h1>Reach Out!</h1>
             </div>
             
-            <form action="https://api.web3forms.com/submit" method="post" class="form" id="contact-form">
+            <form class="form" id="contact-form">
 
                 <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
@@ -229,20 +229,42 @@
 
 
     <script>
-    const form = document.getElementById('contact-form');
+        document
+            .getElementById("contact-form")
+            .addEventListener("submit", async (e) => {
+            e.preventDefault(); // Prevent the default form submission
 
-    form.addEventListener('submit', function(e) {
+            const form = e.target;
+            const formData = new FormData(form);
+            const body = {};
 
-        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+            // Convert form data into a plain object
+            formData.forEach((value, key) => {
+                body[key] = value;
+            });
 
-        if (!hCaptcha) {
-            e.preventDefault();
-            alert("Please fill out captcha field")
-            return
-        }
+            try {
+                const response = await fetch("/.netlify/functions/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(body),
+                });
 
-        document.getElementById("contact-form").reset();
-    });
+                const result = await response.json();
+
+                if (result.success) {
+                alert("✅ Message sent!");
+                form.reset();
+                } else {
+                alert("❌ There was an error sending your message.");
+                }
+            } catch (err) {
+                console.error("Form submit error:", err);
+                alert("❌ Unexpected error occurred.");
+            }
+            });
     </script>
     <script src="scripts.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
