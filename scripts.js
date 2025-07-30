@@ -27,11 +27,11 @@ const showSlide = (index) => {
 };
 
 nextButton.addEventListener("click", () => {
-  currIndex = (currIndex + 1) % slides.length;
+  currIndex = (currIndex - 1 + slides.length) % slides.length;
   showSlide(currIndex);
 });
 
 prevButton.addEventListener("click", () => {
-  currIndex = (currIndex - 1 + slides.length) % slides.length;
+  currIndex = (currIndex + 1) % slides.length;
   showSlide(currIndex);
 });

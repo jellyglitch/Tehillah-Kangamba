@@ -358,12 +358,15 @@ h1 {
 
 .slide {
     display: flex;
-    opacity: 0;
     position: absolute;
 }
 
+.slide:not(.active){
+    display: none;
+}
+
 .active {
-    opacity: 1;
+    display: flex;
     position: relative;
 }
 
@@ -387,12 +390,21 @@ h1 {
 .project1 {
     height: 300px;
     background-color:rgb(173, 196, 188);
-    padding: 20px;
+    overflow: hidden;
+}
+
+.project1 img {
+    height: 300px;
 }
 
 .project2 {
     height: 300px;
     background-color: #8993a9;
+    overflow: hidden;
+}
+
+.project2 img {
+    height: 300px;
 }
 
 .more-projects {
