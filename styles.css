@@ -478,6 +478,16 @@ h1 {
     filter: drop-shadow(-1px 10px 0px #8587AB);
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem;
+}
+
+.project {
+    background-color: #fff;
+}
+
 /******************** ABOUT PAGE ********************/
 #about-container {
     padding: 0 5vw;
