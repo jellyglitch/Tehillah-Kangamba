@@ -363,33 +363,60 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px solid #393A50;
+    border: 0.7vw solid #393A50;
+    position: relative;
+}
+
+.project:hover img {
+    opacity: 0.05;
+}
+
+.project:hover .project-info {
+    opacity: 1;
 }
 
 .project img{
     max-width: 100%;
     height: auto;
     display: block;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .project1 {
     grid-column: span 10;
+    font-size: 1.3vw;
 }
 
 .project2 {
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .project3 {
-    grid-column: span 8;
+    grid-column: span 7;
 }
 
 .project4 {
     grid-column: span 5;
+    font-size: 0.9vw;
 }
 
 .project5 {
     grid-column: span 5;
+    font-size: 0.9vw;
+}
+
+.project-info {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #333;
 }
 
 /******************** ABOUT PAGE ********************/
