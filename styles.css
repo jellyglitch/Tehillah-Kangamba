@@ -398,8 +398,8 @@ h1 {
         text-align: center;
     }
 
-    .project1 {
-        font-size: 5vw;
+    .project1, .project2, .project3 {
+        font-size: 4vw;
     }
 
     .project4, .project5 {
