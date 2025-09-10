@@ -56,7 +56,11 @@
         <div class="projects">
             <div class="project project1">
                 <a href="https://www.blackvalleycomics.com/" target="_blank">
-                    <img src="images/BlackValley1.png">
+                    <picture>
+                        <source srcset="images/BlackValley1.png" media="(min-width: 768px)">
+                        <source srcset="images/BlackValley2.jpg" media="(max-width: 767px)">
+                        <img src="images/BlackValley1.png" alt="Black Valley Comics">
+                    </picture>
                     <div class="project-info">
                         <h2>Black Valley Comics</h2>
                         Tech Stack: Next JS, React Native, PostgreSQL, Prisma JS, Tailwind CSS <br><br>
@@ -87,27 +91,37 @@
             </div>
             <div class="project project3">
                 <a href="https://github.com/JakobMckenna/NoName/tree/main" target="_blank">
-                    <img src="images/DevDiaries2.jpg">
+                    <picture>
+                        <source srcset="images/DevDiaries1.jpg" media="(min-width: 768px)">
+                        <source srcset="images/DevDiaries3.jpg" media="(max-width: 767px)">
+                        <img src="images/DevDiaries1.jpg" alt="Dev Diaries">
+                    </picture>
                     <div class="project-info">
                         <h2>Dev Diaries</h2>
                         <p>Tech Stack: Next JS, Express JS, MySQL</p><br>
                         <p>Dev Diaries is a free web application designed to streamline project management 
                         for developers, project managers, and stakeholders. It offers a centralized 
                         platform where users can manage tasks, collaborate in real-time, and track 
-                        project progress more efficiently.</p><br>
+                        project progress more efficiently.</p>
                         
-                        <p>By centralizing communication, documentation, and project tracking, Dev Diaries 
+                        <p class="desktop-text">
+                            <br>
+                            By centralizing communication, documentation, and project tracking, Dev Diaries 
                             aims to improve onboarding, collaboration, and overall project efficiency. 
                             The platform is designed to scale and adapt based on user feedback, with the 
                             potential to expand beyond web applications in the future.
-                        </p><br>
+                        </p>
                     </div>
                 </a>
                 
             </div>
             <div class="project project4">
                 <a href="https://github.com/AMarinic92/4560-IA-Accessibility-Checker" target="_blank">
-                    <img src="images/AIAcess2.png">
+                    <picture>
+                        <source srcset="images/AIAcess2.png" media="(min-width: 768px)">
+                        <source srcset="images/AIAcess1.png" media="(max-width: 767px)">
+                        <img src="images/AIAcess2.png" alt="AI-Powered Accessibility Checker">
+                    </picture>
                     <div class="project-info">
                         <h2>AI-Powered Accessibility Checker</h2>
                         <p>Tech Stack: Python, React, HTML/CSS, Tensorflow, Docker</p><br>
@@ -116,7 +130,11 @@
                             ensuring digital content is accessible to all users. Leveraging advanced machine 
                             learning algorithms, our platform efficiently scans websites to detect potential 
                             accessibility issues. Our Accessibility Checker offers thorough analysis and 
-                            practical recommendations for improvement. By providing developers, designers, 
+                            practical recommendations for improvement. 
+                        </p>
+
+                        <p class="desktop-text">
+                            By providing developers, designers, 
                             and content creators with valuable insights, our solution contributes to creating 
                             a more inclusive digital environment where everyone can access and engage with 
                             content effortlessly.
@@ -127,19 +145,25 @@
             </div>
             <div class="project project5">
                 <a href="https://github.com/TehillahK/IMDB-Database-Analyzer" target="_blank">
-                    <img src="images/IMDB2.png">
+                    <picture>
+                        <source srcset="images/IMDB2.png" media="(min-width: 768px)">
+                        <source srcset="images/IMDB1.png" media="(max-width: 767px)">
+                        <img src="images/IMDB1.png" alt="IMDB Database Analyzer">
+                    </picture>
                     <div class="project-info">
                         <h2>IMDB Database Analyzer</h2>
                         <p>Tech Stack: Next JS, Typescript</p><br>
                         <p>
-                            This project was built with next js and typescript (which is a subset of javascript 
-                            that lets you use explicit data types) to serve as both a frontend and server to make 
+                            This project was built with next js and typescript to serve as both a frontend and server to make 
                             calls to the database separated from the front end. Next JS uses a folder routing 
                             system in the pages folder. So all backend calls are in the api folder. The frontend 
-                            then makes rest api calls to the backend to get the data. For example index.tsx is the 
-                            home page of our website and has functions like fetchNumEpisodes () which makes an api 
-                            call to api/numepisodes on the same domain found in pages/api/numepisodes.tsx where the 
-                            sql query is run.
+                            then makes rest api calls to the backend to get the data. 
+                            <p class="desktop-text">
+                                For example index.tsx is the 
+                                home page of our website and has functions like fetchNumEpisodes () which makes an api 
+                                call to api/numepisodes on the same domain found in pages/api/numepisodes.tsx where the 
+                                sql query is run.
+                            </p>
                         </p>
                     </div>
                 </a>
